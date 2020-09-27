@@ -15,8 +15,8 @@ describe('Test Contact Us form via WebdriverUni', () => {
     cy.visit('http://www.webdriveruniversity.com/Contact-Us/contactus.html');
     cy.get('[name="first_name"]').type('Mandi');
     cy.get('[name="last_name"]').type('Haase');
-
     cy.get('textarea.feedback-input').type('hello world');
     cy.get('[type="submit"]').click();
+    cy.get('body').contains('Error: all fields are required');
   });
 });
