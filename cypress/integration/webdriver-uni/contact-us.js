@@ -8,6 +8,7 @@ describe('Test Contact Us form via WebdriverUni', () => {
     cy.get('[name="email"]').type('mandi@gmail.com');
     cy.get('textarea.feedback-input').type('hello world');
     cy.get('[type="submit"]').click();
+    cy.get('h1').should('have.text', 'Thank You for your Message!');
   });
 
   it('Should not be able to submit a successful submission via contact us form as all field are required', () => {

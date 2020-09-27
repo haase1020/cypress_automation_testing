@@ -8,6 +8,7 @@ describe('Test Contact Us form via Automation Test Store', () => {
 
     cy.get('#ContactUsFrm_first_name').type('Mandi');
     cy.get('#ContactUsFrm_email').type('mandi@gmail.com');
+    cy.get('#ContactUsFrm_email').should('have.attr', 'name', 'email');
     cy.get('#ContactUsFrm_enquiry').type('Hello everyone!');
     cy.get("button[title='Submit']").click();
     cy.get('.mb40 > :nth-child(3)').should(
