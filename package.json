@@ -1,0 +1,24 @@
+{
+  "name": "cypress_automation_testing",
+  "version": "1.0.0",
+  "description": "Cypress test practice",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.2.0",
+    "cypress-xpath": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haase1020/cypress_automation_testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haase1020/cypress_automation_testing/issues"
+  },
+  "homepage": "https://github.com/haase1020/cypress_automation_testing#readme"
+}
