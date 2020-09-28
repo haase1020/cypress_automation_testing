@@ -44,7 +44,14 @@ describe('Verifying variables, cypress commands and jquery comands', () => {
       .should('contain', 'First name');
 
     //JQuery approach
-
-    //embedded commands (Closure)
+    cy.contains('#ContactUsFrm', 'Contact Us Form').then((text) => {
+      const firstNameText = text.find('#field_11').text();
+      expect(firstNameText).to.contain('First name');
+      //embedded commands (Closure)
+      cy.get('#field_11').then((fnText) => {
+        cy.log(fnText.text());
+        cy.log(fnText);
+      });
+    });
   });
 });
