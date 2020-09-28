@@ -15,5 +15,8 @@ describe('Test Contact Us form via Automation Test Store', () => {
       'have.text',
       'Your enquiry has been successfully sent to the store owner!'
     );
+    cy.log('your test is done!');
+    // //can use non-cypress command but order not certain
+    // console.log('your test has completed!');
   });
 });
