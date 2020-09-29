@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 describe('cypress web security', () => {
-  it.only('validate visiting two different domains', () => {
+  it('validate visiting two different domains', () => {
     //this test will fail due to Cypress issue
     cy.visit('http://www.webdriveruniversity.com/');
     cy.visit('https://www.automationteststore.com/');
